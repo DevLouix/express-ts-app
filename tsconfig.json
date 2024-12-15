@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                               // The JavaScript version to output.
+    "module": "commonjs",                          // Module system used (CommonJS for Node.js).
+    "outDir": "./lib",                            // The output directory for the compiled JavaScript files.
+    "rootDir": "./src",                            // The root directory for the TypeScript source files.
+    "strict": true,                                // Enables strict type checking.
+    "esModuleInterop": true,                       // Allows importing non-ES modules in an ES Module style.
+    "skipLibCheck": true,                          // Skips type checking of declaration files (faster compilation).
+    "forceConsistentCasingInFileNames": true,      // Ensures file names are case-sensitive across the entire project.
+    "moduleResolution": "node",                    // Tells TypeScript how to resolve modules.
+    "resolveJsonModule": true,                     // Allows importing JSON files.
+    "noImplicitAny": true,                         // Ensures that implicit "any" types are not allowed.
+    "allowJs": true,                               // Allows JavaScript files to be included in the project.
+    "checkJs": true,                               // Checks the validity of JavaScript files (with type checking).
+    "lib": ["es2020"],                             // Specifies the library files to include.
+    "declaration": false,                          // Avoid generating declaration files (.d.ts).
+    "sourceMap": true                              // Generate corresponding .map files for debugging.
+  },
+  "include": [
+    "src/**/*.ts"                                  // Include all TypeScript files under the `src` folder.
+  ],
+  "exclude": [
+    "node_modules",                                // Exclude the `node_modules` folder from compilation.
+    "dist"                                         // Exclude the `dist` folder if you're not compiling there.
+  ]
+}
